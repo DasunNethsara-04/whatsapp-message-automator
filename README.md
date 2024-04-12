@@ -1,2 +1,2 @@
-# whatsapp-message-autmator
-Send New Year Wishes via Whatsapp without typing again and again
+# whatsapp-message-automator
+Send your New Year's greetings without constantly typing by using WhatsApp. Use Python to send messages automatically
