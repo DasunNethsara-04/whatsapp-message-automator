@@ -4,6 +4,8 @@ import pywhatkit
 import pyautogui
 import time
 
+keyboard = Controller()
+
 # global variables
 message = "Test Message from Python"
 time_hour = 9
@@ -19,9 +21,21 @@ def get_phone_numbers() -> list:
     return phone_nums
 
 def send_message(numbers: list) -> None:
-    for num in numbers:
-        # pywhatkit.sendwhatmsg(num, message, )
-        pass
+    try:
+        for num in numbers:
+            pywhatkit.sendwhatmsg_instantly(
+            phone_no=num, 
+            message=message,
+            tab_close=True
+        )
+        time.sleep(10)
+        pyautogui.click()
+        time.sleep(2)
+        keyboard.press(Key.enter)
+        keyboard.release(Key.enter)
+        print("Message sent!")
+    except:
+        print("Something went wrong")
 
 if __name__ == "__main__":
     phone_nums = get_phone_numbers()

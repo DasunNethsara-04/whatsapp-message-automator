@@ -5,6 +5,7 @@ __pycache__/
 
 # visual studio code settings
 .vscode
+*.txt
 
 # C extensions
 *.so
