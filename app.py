@@ -4,12 +4,11 @@ import pywhatkit
 import pyautogui
 import time
 
+# keyboard instance for Controller
 keyboard = Controller()
 
 # global variables
 message = "Test Message from Python"
-time_hour = 9
-time_minute = 16
 
 phone_nums: list = []
 
@@ -28,7 +27,7 @@ def send_message(numbers: list) -> None:
             message=message,
             tab_close=True
         )
-        time.sleep(10)
+        time.sleep(5)
         pyautogui.click()
         time.sleep(2)
         keyboard.press(Key.enter)
