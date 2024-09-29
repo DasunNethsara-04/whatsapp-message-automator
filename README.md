@@ -11,7 +11,7 @@ Before using AutoWhatsAppSender, ensure you have the following:
 ## Installation
 1. Clone the Repository:
    ```bash
-   git clone https://github.com/your-username/whatsapp-message-automator.git
+   git clone https://github.com/DasunNethsara-04/whatsapp-message-automator.git
    ```
 2. Navigate to the Directory:
    ```bash
